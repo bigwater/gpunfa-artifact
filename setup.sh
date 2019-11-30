@@ -6,7 +6,7 @@ export GPUNFA_ROOT=${PWD}
 
 if [ ! -d "gpunfa_benchmarks" ]; then
     echo "Downloading benchmarks (795MB)... "
-    wget --quiet --show-progress -O gpunfa_benchmarks.zip https://www.dropbox.com/s/qn9skx7374q1x6u/gpunfa_benchmarks.zip
+    wget -O gpunfa_benchmarks.zip https://www.dropbox.com/s/qn9skx7374q1x6u/gpunfa_benchmarks.zip
 
     if [ $? -eq 0 ]; then
         echo "unzip the benchmarks... "
@@ -21,7 +21,7 @@ fi
 
 if [ ! -d "raw_data" ]; then
     echo "Downloading the raw data for generating all experimental results shown in the paper... (430MB)"
-    wget --quiet --show-progress -O raw_data.zip https://www.dropbox.com/s/8bym4qa9xeepkkf/raw_data.zip
+    wget -O raw_data.zip https://www.dropbox.com/s/8bym4qa9xeepkkf/raw_data.zip
 
     if [ $? -eq 0 ]; then
         echo "unzip the raw data... "
