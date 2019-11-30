@@ -1,9 +1,6 @@
 cd ${GPUNFA_ROOT}
 
-
-
-
-if [ ! -d "gpunfa_benchmarks" ]; then
+if [ ! -d "exp_table3" ]; then
     mkdir exp_table3 && cd exp_table3
 else
     cd exp_table3
