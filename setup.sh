@@ -5,33 +5,17 @@ echo ${PWD}
 export GPUNFA_ROOT=${PWD}
 
 if [ ! -d "gpunfa_benchmarks" ]; then
-    echo "Downloading benchmarks (795MB)... "
-    wget -O gpunfa_benchmarks.zip https://www.dropbox.com/s/qn9skx7374q1x6u/gpunfa_benchmarks.zip
-
-    if [ $? -eq 0 ]; then
-        echo "unzip the benchmarks... "
-        unzip -q gpunfa_benchmarks.zip
-    else
-        echo "download apps failed. "
-        exit 1
-    fi
+    echo "unzip the benchmarks... "
+    unzip -q gpunfa_benchmarks.zip
 else
-   echo "Skip downloading benchmarks since they exist. "	
+   echo "Skip unzipping benchmarks since they exist. "	
 fi
 
 if [ ! -d "raw_data" ]; then
-    echo "Downloading the raw data for generating all experimental results shown in the paper... (430MB)"
-    wget -O raw_data.zip https://www.dropbox.com/s/8bym4qa9xeepkkf/raw_data.zip
-
-    if [ $? -eq 0 ]; then
-        echo "unzip the raw data... "
-        unzip -q raw_data.zip
-    else
-        echo "download raw data failed. "
-        exit 1
-    fi
+    echo "unzip the raw data... "
+    unzip -q raw_data.zip
 else
-    echo "skip downloading raw data since it exists. "
+    echo "skip unzipping raw data since it exists. "
 fi
 
 
