@@ -31,6 +31,12 @@ to install all the required Python packages.
 ### Datasets
 All data sets are from public available benchmark suites. We convert the automata files of them to ANML format. To facilitate this step, we provide the data set that is ready to use. Our scripts will automatically unzip these datasets. 
 
+### Benchmarks
+If the benchmark could not be downloaded due to GitHub's quota, try to download it [here](https://www.dropbox.com/s/havbbf1281eer0i/gpunfa_benchmarks.zip?dl=0). 
+
+
+
+
 ### Installation
 The `setup.sh` will automatically download the datasets, build the executables, and set up environmental variables. 
 
